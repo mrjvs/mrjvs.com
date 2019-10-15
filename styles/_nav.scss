@@ -1,0 +1,31 @@
+@use 'variables';
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+
+  a {
+    color: variables.$text_main;
+    text-decoration: none;
+
+    &:hover {
+      color: variables.$text_bold;
+    }
+  }
+
+  > div a {
+    margin-left: 1.5rem;
+  }
+
+  .brand {
+    font-weight: bold;
+    color: variables.$text_bold;
+
+    &:hover {
+      opacity: .5;
+    }
+  }
+}

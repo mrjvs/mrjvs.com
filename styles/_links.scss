@@ -1,0 +1,38 @@
+@use 'variables';
+
+a, a:focus, a:visited, a:active, .link {
+  text-decoration: none;
+  color: variables.$link_color;
+  cursor: pointer;
+
+  &:hover {
+    color: variables.$link_color_hover;
+  }
+
+  &.ico-link, &.ico-github, &.ico-twitter {
+    padding-left: 1.5em;
+    position: relative;
+    display: inline-block;
+    margin-bottom: .5rem;
+
+    &:before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      height: 1.2em;
+      width: 1.2em;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      top: -.05em;
+      left: -.1em;
+    }
+  }
+
+  &.ico-link:before {
+    background-image: url('/img/icons/link.svg');
+  }
+
+  &.ico-github:before {
+    background-image: url('/img/icons/github.svg');
+  }
+}

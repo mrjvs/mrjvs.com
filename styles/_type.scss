@@ -1,0 +1,27 @@
+@use 'variables';
+
+h1, .h1 {
+  font-size: 3rem;
+  color: variables.$heading_main;
+  margin: 0 0 .5rem 0;
+}
+
+h2, .h2 {
+  font-size: 2rem;
+  color: variables.$heading_main;
+  margin: 0 0 .5rem 0;
+}
+
+p {
+  font-size: 1rem;
+  color: variables.$text_main;
+}
+
+.hero-text {
+  font-size: 1.2rem;
+}
+
+.sub-title {
+  color: variables.$text_muted;
+  margin: 0 0 .5rem 0;
+}
