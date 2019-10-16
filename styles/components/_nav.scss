@@ -7,17 +7,29 @@ nav {
   justify-content: space-between;
   padding: 2rem 0;
 
-  a {
+  > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  a, a:active, a:visited, a:focus {
     color: v.$text_main;
     text-decoration: none;
 
     &:hover {
+      opacity: .5;
       color: v.$text_bold;
     }
   }
 
   > div a {
     margin-left: 1.5rem;
+
+    &.link-icon {
+      margin-left: 1rem;
+    }
   }
 
   .brand {
@@ -26,6 +38,7 @@ nav {
 
     &:hover {
       opacity: .5;
+      color: v.$text_bold;
     }
   }
 }

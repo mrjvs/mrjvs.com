@@ -1,0 +1,74 @@
+@use 'utils/variables' as v;
+
+$figure1: #3A84E7;
+$figure2: #CBE8FF;
+
+.deco-card {
+  background-color: v.$background_main;
+  border-radius: v.$border_radius;
+  padding: 1.5rem 10rem 1.5rem 3rem;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, .1);
+
+  .heading {
+    font-size: 1.5rem;
+    color: v.$heading_alt;
+  }
+
+  &.circles {
+    overflow: hidden;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      background-color: $figure1;
+      border-radius: 50%;
+      width: 17rem;
+      height: 17rem;
+      right: -6rem;
+      bottom: -9.5rem;
+      opacity: .75;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      background-color: $figure2;
+      border-radius: 50%;
+      width: 25rem;
+      height: 25rem;
+      right: -15rem;
+      top: -15rem;
+      opacity: .75;
+    }
+  }
+
+  &.triangles {
+    overflow: hidden;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      background-color: $figure1;
+      border-radius: 50%;
+      width: 17rem;
+      height: 17rem;
+      right: -6rem;
+      bottom: -9.5rem;
+      opacity: .75;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      background-color: $figure2;
+      border-radius: 50%;
+      width: 25rem;
+      height: 25rem;
+      right: -15rem;
+      top: -15rem;
+      opacity: .75;
+    }
+  }
+}

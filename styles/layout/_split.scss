@@ -1,0 +1,24 @@
+.split {
+  display: flex;
+  flex-direction: row;
+
+  > *:first-child {
+    flex: 1;
+    margin: 5rem 0 7rem 0;
+  }
+
+  &.even {
+    > * {
+      flex: 1;
+      margin: 0 1rem 0 0;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+
+  &.top-spacing {
+    margin-top: 3rem;
+  }
+}

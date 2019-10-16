@@ -1,8 +1,10 @@
 @use 'base';
 
+@use 'layout/container';
 @use 'layout/portfolio';
-@use 'layout/hero';
+@use 'layout/split';
 
 @use 'components/links';
 @use 'components/button';
 @use 'components/nav';
+@use 'components/decoCard';

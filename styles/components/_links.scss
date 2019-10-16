@@ -4,6 +4,8 @@ a, a:focus, a:visited, a:active, .link {
   text-decoration: none;
   color: v.$link_color;
   cursor: pointer;
+  outline: none;
+  border: none;
 
   &:hover {
     color: v.$link_color_hover;
@@ -34,5 +36,27 @@ a, a:focus, a:visited, a:active, .link {
 
   &.ico-github:before {
     background-image: url('/img/icons/github.svg');
+  }
+
+  &.link-icon > img {
+    height: 1.2rem;
+  }
+}
+
+.footer {
+  a, a:focus, a:visited, a:active, .link {
+    color: v.$footer_link_color;
+
+    &:hover {
+      color: v.$footer_link_color_hover;
+    }
+
+    &.ico-link:before {
+      background-image: url('/img/icons/white_link.svg');
+    }
+
+    &.ico-github:before {
+      background-image: url('/img/icons/white_github.svg');
+    }
   }
 }

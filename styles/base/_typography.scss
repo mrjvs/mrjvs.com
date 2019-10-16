@@ -15,13 +15,35 @@ h2, .h2 {
 p {
   font-size: 1rem;
   color: v.$text_main;
+  margin: 1rem 0;
+}
+
+.heading-alt {
+  color: v.$heading_alt;
+}
+
+p.short {
+  max-width: 500px;
+  line-height: 1.5;
 }
 
 .hero-text {
   font-size: 1.2rem;
+  max-width: 500px;
+  width: 300px;
+  margin: 1.5rem 0;
 }
 
 .sub-title {
   color: v.$text_muted;
   margin: 0 0 .5rem 0;
+}
+
+.footer {
+  p {
+    color: v.$footer_text;
+  }
+  h1, h2, .h1, .h2 {
+    color: v.$footer_heading;
+  }
 }
