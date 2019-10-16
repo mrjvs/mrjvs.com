@@ -1,12 +1,12 @@
-@use 'variables';
+@use 'utils/variables' as v;
 
 a, a:focus, a:visited, a:active, .link {
   text-decoration: none;
-  color: variables.$link_color;
+  color: v.$link_color;
   cursor: pointer;
 
   &:hover {
-    color: variables.$link_color_hover;
+    color: v.$link_color_hover;
   }
 
   &.ico-link, &.ico-github, &.ico-twitter {

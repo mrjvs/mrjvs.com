@@ -1,4 +1,4 @@
-@use 'variables';
+@use 'utils/variables' as v;
 
 nav {
   display: flex;
@@ -8,11 +8,11 @@ nav {
   padding: 2rem 0;
 
   a {
-    color: variables.$text_main;
+    color: v.$text_main;
     text-decoration: none;
 
     &:hover {
-      color: variables.$text_bold;
+      color: v.$text_bold;
     }
   }
 
@@ -22,7 +22,7 @@ nav {
 
   .brand {
     font-weight: bold;
-    color: variables.$text_bold;
+    color: v.$text_bold;
 
     &:hover {
       opacity: .5;

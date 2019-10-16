@@ -1,10 +1,10 @@
-@use 'variables';
+@use 'utils/variables' as v;
 
 .btn, button, a.btn {
   border: none;
   text-decoration: none;
-  background-color: variables.$button_main;
-  color: variables.$button_main_text;
+  background-color: v.$button_main;
+  color: v.$button_main_text;
   text-transform: uppercase;
   border-radius: 3px;
   padding: .6rem 1.7rem;
@@ -13,10 +13,10 @@
 
   &:visited, &:focus, &:hover, &:active {
     text-decoration: none;
-    color: variables.$button_main_text;
+    color: v.$button_main_text;
   }
 
   &:hover, &:active {
-    background-color: variables.$button_main_hover;
+    background-color: v.$button_main_hover;
   }
 }

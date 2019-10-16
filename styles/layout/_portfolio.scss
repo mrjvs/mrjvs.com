@@ -1,0 +1,27 @@
+@use 'utils/variables' as v;
+
+.container.portfolio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  
+  > img {
+    width: 25rem;
+    flex: 0 1 auto;
+  }
+  > .content {
+    margin: 1rem 0 1rem 3rem;
+    flex: 0 1 auto;
+
+    h2 {
+      color: v.$heading_alt;
+    }
+
+    p {
+      max-width: 500px;
+      line-height: 1.5;
+    }
+  }
+}
