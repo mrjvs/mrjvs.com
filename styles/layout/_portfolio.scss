@@ -7,12 +7,44 @@
   padding-top: 3rem;
   padding-bottom: 3rem;
   
-  img {
+  .logo-card {
     width: 25rem;
     flex: 0 1 auto;
   }
   .content {
     margin: 1rem 0 1rem 3rem;
     flex: 0 1 auto;
+  }
+
+  &:hover .logo-card {
+    transform: perspective(40rem) rotateY(10deg);
+    &:after {
+      width: 100px;
+    }
+  }
+
+  &:hover .logo-card.long:after {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container .portfolio-item {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .content {
+      margin: 3rem 0;
+    }
+
+    &:hover .logo-card {
+      transform: none;
+      &:after {
+        width: 0;
+      }
+    }
+    &:hover .logo-card.long:after {
+      width: 0;
+    }
   }
 }

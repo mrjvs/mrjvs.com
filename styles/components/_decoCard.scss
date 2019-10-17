@@ -56,7 +56,7 @@
   }
 
   &.perspective {
-    transform: perspective(30rem) rotateY(-25deg) scale(.9);
+    transform: perspective(50rem) rotateY(-25deg) scale3d(.9, .9, .9) rotateX(10deg);
   }
 }
 

@@ -81,3 +81,9 @@
     background-color: v.$background_footer;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .container > .wrap {
+    padding: 1.5rem v.$smaller_container_padding;
+  }
+}

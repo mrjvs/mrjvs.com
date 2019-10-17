@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="537" height="375" viewBox="0 0 537 375"><g transform="translate(0 -0.065)"><rect width="537" height="375" rx="10" transform="translate(0 0.065)" fill="#ee5353"/><g transform="translate(237 140)"><path d="M31.733-39.6S63.466,5.257,63.466,22.782A31.733,31.733,0,0,1,0,22.782C0,5.257,31.733-39.6,31.733-39.6Z" transform="translate(0.147 40.546)" fill="#fff"/><rect width="16" height="15" transform="translate(0 48.065)" fill="#fff"/><rect width="16" height="16" transform="translate(0 16.065)" fill="#fff"/><rect width="16" height="16" transform="translate(16 32.065)" fill="#fff"/><rect width="16" height="16" transform="translate(16 0.065)" fill="#fff"/><rect width="16" height="16" transform="translate(0 32.065)" fill="#ee5353"/><rect width="16" height="16" transform="translate(0 0.065)" fill="#ee5353"/><rect width="16" height="16" transform="translate(16 16.065)" fill="#ee5353"/></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" viewBox="0 0 88.3 133.9" xml:space="preserve">
+<path id="XMLID_88_" fill="#FFFFFF" d="M88.3,85.6c0,26.7-19.7,48.3-44,48.3s-44-21.6-44-48.3c0-5.8,0-21.7,0-21.7h21.9l-0.1-21h22
+	l0-21.1L22,22l0.1,20.9H0l0.1-21h22L21.9,0.3L44.1,0C44.1,0,88.3,58.9,88.3,85.6z"/>
+</svg>

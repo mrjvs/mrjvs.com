@@ -12,6 +12,7 @@
   cursor: pointer;
   margin-top: .5rem;
   font-size: .9em;
+  transition: background-color .05s;
 
   &:visited, &:focus, &:hover, &:active {
     text-decoration: none;
