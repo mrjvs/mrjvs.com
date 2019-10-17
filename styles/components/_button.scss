@@ -10,6 +10,8 @@
   padding: .6rem 1.7rem;
   display: inline-block;
   cursor: pointer;
+  margin-top: .5rem;
+  font-size: .9em;
 
   &:visited, &:focus, &:hover, &:active {
     text-decoration: none;
@@ -18,5 +20,23 @@
 
   &:hover, &:active {
     background-color: v.$button_main_hover;
+  }
+
+  &.full {
+    display: block;
+    width: 100%;
+  }
+
+  &.alt {
+    background-color: v.$background_main;
+    color: v.$text_main;
+    text-transform: capitalize;
+    &:hover, &:active {
+      background-color: v.$background_alt;
+    }
+  }
+
+  &.spaced {
+    margin-top: 1rem;
   }
 }

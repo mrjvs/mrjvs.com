@@ -1,74 +1,65 @@
 @use 'utils/variables' as v;
 
-$figure1: #3A84E7;
-$figure2: #CBE8FF;
-
 .deco-card {
   background-color: v.$background_main;
-  border-radius: v.$border_radius;
-  padding: 1.5rem 10rem 1.5rem 3rem;
-  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, .1);
+  border-radius: v.$border-radius;
+  padding: 2rem;
+  box-shadow: 0 30px 30px 0 rgba(130, 174, 190, .15);
+  width: 20rem;
 
-  .heading {
-    font-size: 1.5rem;
-    color: v.$heading_alt;
-  }
+  .user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
 
-  &.circles {
-    overflow: hidden;
-    position: relative;
-
-    &:before {
-      content: "";
-      position: absolute;
-      background-color: $figure1;
+    .avatar {
+      width: 3.7rem;
+      height: 3.7rem;
       border-radius: 50%;
-      width: 17rem;
-      height: 17rem;
-      right: -6rem;
-      bottom: -9.5rem;
-      opacity: .75;
+      margin-right: 1.3rem;
+      background-color: v.$button_main;
     }
-
-    &:after {
-      content: "";
-      position: absolute;
-      background-color: $figure2;
-      border-radius: 50%;
-      width: 25rem;
-      height: 25rem;
-      right: -15rem;
-      top: -15rem;
-      opacity: .75;
+    .caption {
+      h3 {
+        font-size: 1.2em;
+        color: v.$heading_main;
+        font-weight: bold;
+        margin: 0;
+      }
     }
   }
 
-  &.triangles {
-    overflow: hidden;
-    position: relative;
+  p {
+    color: v.$text_main;
+    margin: .5rem 0 0 0;
+  }
 
-    &:before {
-      content: "";
-      position: absolute;
-      background-color: $figure1;
-      border-radius: 50%;
-      width: 17rem;
-      height: 17rem;
-      right: -6rem;
-      bottom: -9.5rem;
-      opacity: .75;
-    }
+  hr {
+    width: 105%;
+    padding: 0;
+    margin: 0 0 0 -2.5%;
+    height: 0;
+    border: none;
+    border-bottom: 1px solid #CBDBEA;
+  }
 
-    &:after {
-      content: "";
-      position: absolute;
-      background-color: $figure2;
-      border-radius: 50%;
-      width: 25rem;
-      height: 25rem;
-      right: -15rem;
-      top: -15rem;
-      opacity: .75;
+  .label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem 0 0 0;
+
+    p {
+      flex: 1;
+      margin: 0;
     }
   }
+
+  &.perspective {
+    transform: perspective(30rem) rotateY(-25deg) scale(.9);
+  }
+}
+
+.footer .deco-card {
+  box-shadow: 0 30px 30px 0 rgba(0, 0, 0, .05);
 }
