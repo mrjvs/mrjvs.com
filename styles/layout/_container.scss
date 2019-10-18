@@ -82,6 +82,17 @@
   }
 }
 
+@media screen and (max-width: 990px) {
+  .container.circles1::before {
+    top: initial;
+    bottom: -50rem;
+    right: -5rem;
+  }
+  .container.circles1::after {
+    bottom: -50rem;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .container > .wrap {
     padding: 1.5rem v.$smaller_container_padding;
