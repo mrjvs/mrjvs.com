@@ -10,13 +10,3 @@ function registerClasses(className, func) {
 }
 
 registerClasses('toggle', updateToggle);
-
-VanillaTilt.init(document.querySelectorAll(".perspective"), {
-    max: 3,
-    startX: 10,
-    startY: -25,
-    perspective: 800,
-    speed: 400,
-    gyroscope: false,
-    scale: 0.9
-});

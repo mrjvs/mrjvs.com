@@ -40,7 +40,7 @@
     margin: 0 0 0 -2.5%;
     height: 0;
     border: none;
-    border-bottom: 1px solid #CBDBEA;
+    border-bottom: 2px solid #CBDBEA;
   }
 
   .label {
@@ -54,12 +54,31 @@
       margin: 0;
     }
   }
-
-  &.perspective {
-    transform: perspective(50rem) rotateY(-25deg) scale3d(.9, .9, .9) rotateX(10deg);
-  }
 }
 
 .footer .deco-card {
   box-shadow: 0 30px 30px 0 rgba(0, 0, 0, .05);
 }
+
+.card-stack {
+  position: relative;
+  transform: scale(.9);
+  transform-origin: right;
+
+  .deco-card:first-child {
+    margin: 6rem 0 0 6rem;
+  }
+  .deco-card:last-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .card-stack {
+    transform: scale(.8);
+    transform-origin: left;
+  }
+}
+

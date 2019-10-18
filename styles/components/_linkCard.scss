@@ -98,3 +98,29 @@ $figure2: #CBE8FF;
     }
   }
 }
+
+@media screen and (max-width: 500px) {
+  .link-card {
+    padding: 10rem 2rem 1.5rem 2rem;
+
+    &.circles:before {
+      right: initial;
+      bottom: initial;
+      top: -9rem;
+      left: -8.5rem;
+    }
+    &.triangles {
+      &:after {
+        bottom: initial;
+        right: -7rem;
+        top: -10rem;
+      }
+      &:before {
+        right: initial;
+        bottom: initial;
+        left: -8rem;
+        top: -8rem;
+      }
+    }
+  }
+}

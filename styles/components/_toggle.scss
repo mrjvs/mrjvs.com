@@ -32,7 +32,10 @@
   }
 
   &.on {
+    border-color: v.$button_main;
+
     &:before {
+      background-color: v.$button_main;
       transform: translateX(1.5rem);
     }
   }
