@@ -1,0 +1,25 @@
+@use 'utils/variables' as v;
+
+input.text {
+    border: 1px solid #8C9DAD;
+    border-radius: 5px;
+    padding: .7rem 1.4rem;
+    font-size: 1rem;
+    color: v.$text_bold;
+    outline: none;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+
+    &::placeholder {
+       color:  v.$text_muted;
+    }
+}
+
+label.input-text {
+    margin: 0;
+    color: v.$text_bold;
+    font-weight: normal;
+    margin-bottom: .5rem;
+    display: block;
+}

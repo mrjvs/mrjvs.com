@@ -7,7 +7,7 @@
   color: v.$button_main_text;
   text-transform: uppercase;
   border-radius: 3px;
-  padding: .6rem 1.7rem;
+  padding: .8rem 1.7rem;
   display: inline-block;
   cursor: pointer;
   margin-top: .5rem;
@@ -35,6 +35,10 @@
     &:hover, &:active {
       background-color: v.$background_alt;
     }
+  }
+
+  &.verysmall {
+    padding: .4rem .7rem;
   }
 
   &.spaced {
