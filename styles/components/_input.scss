@@ -14,6 +14,11 @@ input.text {
     &::placeholder {
        color:  v.$text_muted;
     }
+
+    &:focus {
+        border-color: v.$button_main;
+        border-width: 2px;
+    }
 }
 
 label.input-text {

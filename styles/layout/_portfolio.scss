@@ -17,7 +17,6 @@
   }
 
   &:hover .logo-card {
-    transform: perspective(40rem) rotateY(10deg);
     &:after {
       width: 100px;
     }
