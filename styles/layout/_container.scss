@@ -17,6 +17,7 @@
 
   &.footer {
     background-color: v.$background_footer;
+    overflow-x: hidden;
   }
 
   > .wrap {
@@ -99,7 +100,7 @@
   }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 400px) {
   .container > .wrap {
     padding: 1.5rem v.$smallest_container_padding;
   }
