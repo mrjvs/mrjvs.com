@@ -1,0 +1,65 @@
+@use 'utils/variables' as v;
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+
+  > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  a, a:active, a:visited, a:focus {
+    color: v.$text_main;
+    text-decoration: none;
+
+    &:hover {
+      opacity: .5;
+      color: v.$text_bold;
+    }
+  }
+
+  > div a {
+    margin-left: 2rem;
+
+    &.link-icon {
+      margin-left: 1.5rem;
+    }
+  }
+
+  .brand {
+    font-weight: bold;
+    color: v.$text_bold;
+
+    &:hover {
+      opacity: .5;
+      color: v.$text_bold;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .brand {
+      margin-bottom: .5rem;
+    }
+
+    > div a {
+      margin-left: 0;
+      margin-right: 2rem;
+  
+      &.link-icon {
+        margin-left: 0;
+        margin-right: 1.5rem;
+      }
+    }
+  }
+}

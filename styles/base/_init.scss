@@ -1,0 +1,26 @@
+@use 'utils/variables' as v;
+
+body, html {
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: v.$background_main;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+::selection, .footer .deco-card *::selection {
+  background: v.$selection_color;
+}
+
+.footer *::selection {
+  background: v.$footer_selection_color;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}

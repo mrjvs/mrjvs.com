@@ -1,0 +1,42 @@
+@use 'utils/variables' as v;
+
+.toggle {
+  display: block;
+  border-radius: 1rem;
+  height: 1rem;
+  width: 2.5rem;
+  border: 2px solid #bdc7cc;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    transition: transform .1s;
+    left: .2rem;
+    height: .7rem;
+    width: .7rem;
+    top: .15rem;
+    border-radius: 50%;
+    background-color: #bdc7cc;
+  }
+
+  &:hover {
+    border-color: #b6a9a9;
+    &:before {
+      background-color: #b6a9a9
+    }
+  }
+
+  &:active:before {
+    opacity: .9;
+  }
+
+  &.on {
+    border-color: v.$button_main;
+
+    &:before {
+      background-color: v.$button_main;
+      transform: translateX(1.3rem);
+    }
+  }
+}
