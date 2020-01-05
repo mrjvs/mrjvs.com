@@ -1,0 +1,38 @@
+@use 'base/var';
+
+.social {
+  background-color: var.$social_bg;
+  border-radius: 50%;
+  width: 2.7rem;
+  height: 2.7rem;
+  margin: .25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  transition: background-color 50ms, color 50ms;
+
+  svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    transition: transform 150ms ease-in-out;
+  }
+
+  &:hover svg {
+    transform: scale(.8, .8);
+  }
+  &.github:hover {
+    color: white;
+    background-color: var.$social_github;
+  }
+
+  &.dribbble:hover {
+    color: white;
+    background-color: var.$social_dribbble;
+  }
+
+  &.twitter:hover {
+    color: white;
+    background-color: var.$social_twitter;
+  }
+}

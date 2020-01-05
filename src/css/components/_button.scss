@@ -1,0 +1,35 @@
+@use 'mixins/font';
+@use 'base/var';
+
+a.btn, button {
+  @include font.font-mixin;
+  padding: .6rem 2.7rem;
+  text-decoration: none;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+
+  &:visited, &:focus, &:active {
+    text-decoration: none;
+    color: white;
+  }
+
+  &:active {
+    transform: scale(0.95, 0.95);
+  }
+
+  &.blue {
+    background-color: var.$btn_blue;
+    &:hover {
+      background-color: var.$btn_blue_hover;
+    }
+  }
+
+  &.red {
+    background-color: var.$btn_red;
+    &:hover {
+      background-color: var.$btn_red_hover;
+    }
+  }
+}

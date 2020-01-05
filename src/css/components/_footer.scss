@@ -1,0 +1,12 @@
+.footer {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+
+  .right {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}

@@ -1,0 +1,29 @@
+@use 'base/var';
+
+.nav {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+
+  .brand, .link {
+    color: var.$txt_paragraph;
+    padding: .6rem;
+    text-decoration: none;
+
+    &:hover {
+      color: var.$txt_heading;
+    }
+  }
+
+  .brand {
+    font-weight: bold;
+    color: var.$txt_heading;
+  }
+
+  .right {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}

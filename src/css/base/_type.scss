@@ -1,0 +1,5 @@
+@use 'base/var';
+
+p {
+  color: var.$txt_paragraph;
+}
