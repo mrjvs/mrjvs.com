@@ -43,7 +43,6 @@
 
 .disabled {
   cursor: auto;
-  filter: grayscale(50%);
 }
 
 .option-container {
