@@ -17,6 +17,7 @@
     align-items: center;
     transition: background-color 50ms ease-in-out, transform 50ms ease-in-out;
     transform-origin: center;
+    outline: none;
   }
 
   button:hover {

@@ -50,7 +50,7 @@
     </Socials>
   </CardWrapper>
   <CardWrapper {cur} num={3}>
-    <ColorPicker on:color={(c)=>{if (cur<=3) selectedColor=c.detail}}>
+    <ColorPicker on:color={(c)=>{if (cur<=3) selectedColor=c.detail}} isDisabled={cur > 3}>
       <h2>I'm running out of things to say</h2>
       <p>Let's just have some fun then!<br>Choose the color that the next card will be!</p>
     </ColorPicker>
