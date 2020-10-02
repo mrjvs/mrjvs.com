@@ -5,7 +5,7 @@
   import Next from "./Next.svelte"
 
   import Standard from "./cards/Standard.svelte"
-  import ColorPicker from "./cards/Colorpicker.svelte"
+  import ColorPicker from "./cards/ColorPicker.svelte"
   import Profile from "./cards/Profile.svelte"
   import Socials from "./cards/Socials.svelte"
   import Colored from "./cards/Colored.svelte"
