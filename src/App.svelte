@@ -21,7 +21,7 @@
     });
   }
 
-  const extraCards = Array(10).fill("Yes, this was really all there was");
+  const extraCards = Array(50).fill("Yes, this was really all there was");
 
   let selectedColor = "";
   let cur = 0;
