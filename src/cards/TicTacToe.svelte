@@ -7,7 +7,7 @@
   let finishedState = "no";
   let winningCells = [0,0,0];
 
-  const timeout = 1000;
+  const timeout = 250;
 
   function selectCell(i, type) {
     if (cells[i].state != 0)
