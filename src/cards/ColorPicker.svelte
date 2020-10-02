@@ -4,20 +4,23 @@
 	const dispatch = createEventDispatcher();
 
 	function setColor(color) {
+    if (isDisabled) 
+      return
     selected = color;
-		dispatch('color', color);
+    dispatch('color', color);
   }
 
   let selected = "";
+  export let isDisabled = false;
 </script>
 
 <div class="card">
   <slot/>
   <div class="option-container">
-    <div class="option c-blue" class:selected={selected=="blue"} on:click={()=>setColor("blue")}></div>
-    <div class="option c-red" class:selected={selected=="red"} on:click={()=>setColor("red")}></div>
-    <div class="option c-gray" class:selected={selected=="gray"} on:click={()=>setColor("gray")}></div>
-    <div class="option c-white" class:selected={selected=="white"} on:click={()=>setColor("white")}></div>
+    <div class="option c-blue" class:selected={selected=="blue"} class:disabled={isDisabled} on:click={()=>setColor("blue")}></div>
+    <div class="option c-red" class:selected={selected=="red"} class:disabled={isDisabled} on:click={()=>setColor("red")}></div>
+    <div class="option c-gray" class:selected={selected=="gray"} class:disabled={isDisabled} on:click={()=>setColor("gray")}></div>
+    <div class="option c-white" class:selected={selected=="white"} class:disabled={isDisabled} on:click={()=>setColor("white")}></div>
   </div>
 </div>
 
@@ -33,8 +36,14 @@
   cursor: pointer;
   transition: transform 50ms ease-in-out;
 }
-.option:hover {
+
+.option:hover:not(.disabled) {
   transform: scale(1.1);
+}
+
+.disabled {
+  cursor: auto;
+  filter: grayscale(50%);
 }
 
 .option-container {
