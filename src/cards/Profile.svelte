@@ -20,7 +20,7 @@
     background-color: #34343D;
     border-radius: 100%;
     margin-right: 1rem;
-    background-image: url('https://images-ext-1.discordapp.net/external/3RddR2cU-I063xwZHu9uanPo_omSrOTkkLPUfV2BF60/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/135081860790222848/07d1f0db079c77a151ab665bbc7aab21.png');
+    background-image: url('https://cdn.discordapp.com/avatars/135081860790222848/b9505ebbad28092d1393cb5d516068d8.webp?size=1024');
     background-size: cover;
     background-position: center;
   }
