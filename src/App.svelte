@@ -6,6 +6,8 @@
 
   import Standard from "./cards/Standard.svelte"
   import ColorPicker from "./cards/ColorPicker.svelte"
+  import ShapePicker from "./cards/ShapePicker.svelte"
+  import BackgroundShower from "./cards/BackgroundShower.svelte"
   import Profile from "./cards/Profile.svelte"
   import Socials from "./cards/Socials.svelte"
   import Colored from "./cards/Colored.svelte"
@@ -24,7 +26,10 @@
   const extraCards = Array(50).fill("Yes, this was really all there was");
 
   let selectedColor = "";
+  let selectedBgColor = "";
+  let selectedBgShape = "";
   let cur = 0;
+
   // cards + extras + last card
   const max = 6 + extraCards.length + 1;
 
@@ -65,14 +70,28 @@
     </TicTacToe>
   </CardWrapper>
   <CardWrapper {cur} num={6}>
+    <ShapePicker on:shape={(c)=>{if (cur<=6) selectedBgShape=c.detail}} isDisabled={cur > 6}>
+      <h2>Lets color it up some more</h2>
+      <p>Lets change the background up a bit, first pick a shape:</p>
+    </ShapePicker>
+  </CardWrapper>
+  <CardWrapper {cur} num={7}>
+    <ColorPicker on:color={(c)=>{if (cur<=7) selectedBgColor=c.detail}} isDisabled={cur > 7}>
+      <h2>Next up, pick a color</h2>
+      <p>Yes, im reusing this card. Just ignore that part.</p>
+    </ColorPicker>
+  </CardWrapper>
+  <CardWrapper {cur} num={8}>
+    <BackgroundShower backgroundShape={selectedBgShape} backgroundColor={selectedBgColor}/>
+  </CardWrapper>
+  <CardWrapper {cur} num={9}>
     <Standard>
       <h2>Ok, I'm really running out of cards now.</h2>
       <p>If you have a need to contact me, you can send me an email at <a href="mailto:mistrjvs@gmail.com">mistrjvs@gmail.com</a>. Thanks for interacting with my site :)</p>
     </Standard>
   </CardWrapper>
-
   {#each extraCards as c,i}
-    <CardWrapper {cur} num={7+i}>
+    <CardWrapper {cur} num={10+i}>
       <Standard>
         <p>{c}</p>
       </Standard>
@@ -105,6 +124,7 @@
     min-height: 100vh;
     padding: 2rem;
     box-sizing: border-box;
+    position: relative;
   }
 
   .button-holder {

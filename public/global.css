@@ -40,3 +40,93 @@ h2 {
 .card.white h2, .card.white h1 {
   color: black;
 }
+
+/* particles */
+body .particle {
+  height: 15rem;
+  width: 15rem;
+  position: fixed;
+  background-color: rgba(0,0,0,0);
+  transition: transform .4s ease-in-out, background-color 150ms ease-in-out;
+  transform: scale(0.1s);
+}
+
+/* particle shapes */
+body.shape-square .particle {
+  border-radius: 5px;
+}
+
+body.shape-circle .particle {
+  border-radius: 100%;
+}
+
+body.shape-triangle .particle {
+  width: 0;
+	height: 0;
+	border-left: 10rem solid transparent;
+	border-right: 10rem solid transparent;
+	border-bottom: 15rem solid transparent;
+	background-color: transparent;
+	border-radius: 0;
+	margin-bottom: .2rem;
+}
+
+/* particle colors */
+body.color-blue .particle {
+  background-color: rgba(132, 132, 223, 0.253);
+}
+
+body.color-blue.shape-triangle .particle {
+  background-color: transparent;
+  border-bottom-color: rgba(132, 132, 223, 0.253);
+}
+
+body.color-red .particle {
+  background-color: rgba(163, 57, 101, 0.664);
+}
+
+body.color-red.shape-triangle .particle {
+  background-color: transparent;
+  border-bottom-color: rgba(163, 57, 101, 0.651);
+}
+
+body.color-white .particle {
+  background-color: rgba(228, 228, 228, 0.664);
+}
+
+body.color-white.shape-triangle .particle {
+  background-color: transparent;
+  border-bottom-color: rgba(32, 29, 36, 0.66);
+}
+
+body.color-gray .particle {
+  background-color: rgba(32, 29, 36, 0.66);
+}
+
+body.color-gray.shape-triangle .particle {
+  background-color: transparent;
+  border-bottom-color: rgba(228, 228, 228, 0.664);
+}
+
+/* particle positions */
+.particle:nth-child(1) {
+  top: -2rem;
+  right: 1vw;
+}
+.particle:nth-child(2) {
+  top: -10rem;
+  right: 17vw;
+}
+.particle:nth-child(3) {
+  bottom: -8rem;
+  left: 5vw;
+}
+.particle:nth-child(4) {
+  top: -10rem;
+  left: -10vw;
+}
+
+body.claimed .particle:nth-child(1) { transform: scale(2.5) rotate(15deg); }
+body.claimed .particle:nth-child(2) { transform: scale(1.5) rotate(25deg); }
+body.claimed .particle:nth-child(3) { transform: scale(2) rotate(50deg); }
+body.claimed .particle:nth-child(4) { transform: scale(1.6); }
